@@ -22,6 +22,8 @@ function App() {
 function sds(e) {
   setAaa(e.target.value)
 }
+
+console.log('qasdasdas')
   return (
     <>
      <h1>{name}</h1>
