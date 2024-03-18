@@ -43,6 +43,7 @@ function App() {
       .then((response) => response.json())
       .then((response) => setCharacters(response.results));
   }, []);
+  console.log("prueba");
   return (
     <div className="app">
       <nav className="barra">
