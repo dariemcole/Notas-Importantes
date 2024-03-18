@@ -1,5 +1,8 @@
 // import { useState } from "react";
+import { useState } from "react";
 import "./App.css";
+import { useEffect } from "react";
+import Personajes from "./components/personajes/personaje";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -33,6 +36,13 @@ import "./App.css";
 // export default App
 
 function App() {
+  const [characters, setCharacters] = useState(null);
+
+  useEffect(() => {
+    const personajes = fetch("https://rickandmortyapi.com/api/character")
+      .then((response) => response.json())
+      .then((response) => setCharacters(response.results));
+  }, []);
   return (
     <div className="app">
       <nav className="barra">
@@ -54,7 +64,12 @@ function App() {
           <div>Clear Filters</div>
           <div>Box</div>
         </div>
-        <div className="cards">Cards</div>
+        <div className="cards">
+          {characters &&
+            characters.map((elemento, indice) => {
+              return <Personajes propiedades={characters && elemento} />;
+            })}
+        </div>
       </div>
     </div>
   );
