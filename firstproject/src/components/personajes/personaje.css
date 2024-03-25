@@ -1,9 +1,9 @@
 .card {
-  border: 1px solid black;
+  border: 2px solid rgb(14, 161, 229);
   width: 300px;
-  margin-bottom: 10px;
+  margin-bottom: 60px;
   border-radius: 10px;
 }
-.imagen_borde {
+.imagen {
   border-radius: 10px 10px 0 0;
 }
