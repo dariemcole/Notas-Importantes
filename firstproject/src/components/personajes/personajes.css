@@ -1,0 +1,38 @@
+.tarjetas {
+    margin: 30px;
+    border: 2px solid rgb(11, 94, 215);
+    border-radius: 10px;
+    margin:14px 20px 15px 2px;
+    width:max-content;
+    padding: 0;
+}
+.imagenes {
+    color: rgb(33, 37, 41);
+    border-radius: 10px 10px 0 0;
+    width: 225px;
+}
+
+.name_personaje{
+    color: rgb(33, 37, 41);
+    width:200px;
+    margin: 10px 0 0 15px;
+    font-family:'Trebuchet MS';
+    font-size: 26px;
+}
+
+.last_location_personaje{
+    color: rgb(33, 37, 41);
+    width:max-content;
+    margin: 25px 5px 5px 10px;
+    font-family:'Arial';
+    font-weight: 10;
+}
+
+.location_personaje{
+    color: rgb(33, 37, 41);
+    width:200px;
+    margin: 10px 5px 5px 10px;
+    font-family:'Arial';
+    font-weight: 100;
+
+}
