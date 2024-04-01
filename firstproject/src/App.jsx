@@ -80,7 +80,7 @@ function App() {
   return (
     <div className="app">
       <nav className="barra">
-        <h1>
+        <h1 className="rickandmorty">
           Rick & Morty <span className="wiki">Wiki</span>
         </h1>
         <div className="links">
